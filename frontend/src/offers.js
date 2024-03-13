@@ -1,6 +1,14 @@
 import './offers.css';
-
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function Offers() {
+    useEffect(() => {
+        AOS.init({
+          duration: 1000, // Duration of the animation
+          once: false, // Only animate once
+        });
+      }, []);
     return (
 <div className="offers">
 <h1 style={{ left: '3%',top: '5%', position: "absolute"}}>Workshops</h1>
@@ -23,7 +31,7 @@ function Offers() {
 </button>
 
 <div className='workshopflex'>
-<div className="workshopcard">
+<div className="workshopcard" data-aos="fade-right">
 <h2>Generative AI</h2>
 <div className="content">
     <h3>Date: </h3>
@@ -39,7 +47,7 @@ function Offers() {
 </button>
 </div>
 </div>
-<div className="workshopcard">
+<div className="workshopcard" data-aos="fade-up">
 <h2>Machine Learning</h2>
 <div className="content">
 <h3>Date: </h3>
@@ -56,7 +64,7 @@ function Offers() {
 </button>
 </div>
 </div>
-<div className="workshopcard">
+<div className="workshopcard" data-aos="fade-left">
 <h2>Web3</h2>
 <div className="content">
 <h3>Date: </h3>

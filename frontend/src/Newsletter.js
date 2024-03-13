@@ -1,6 +1,14 @@
 import './Newsletter.css';
-
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function Newsletter() {
+    useEffect(() => {
+        AOS.init({
+          duration: 1000, // Duration of the animation
+          once: false, // Only animate once
+        });
+      }, []);
     return (
 <div className="Newsletter">
 <button class="cta">
@@ -23,7 +31,7 @@ function Newsletter() {
 <h1 style={{ marginTop: "3%", marginLeft: '3%'}}>Newsletter</h1>
 
 <div className="newsletterflex">
-    <div className='card3'>
+    <div className='card3' data-aos="zoom-in">
    < h2 className="newstitle"> Machine Learning</h2>
 <div className="content">
 <p>Unlock the world of creative possibilities with Generative AI. 
@@ -37,7 +45,7 @@ function Newsletter() {
 </div>
     <button class="button1">Learn More</button>
     </div>
-    <div className='card3'>
+    <div className='card3' data-aos="zoom-in">
    < h2 className="newstitle"> Machine Learning</h2>
 <div className="content">
 <p>Unlock the world of creative possibilities with Generative AI. 
@@ -52,7 +60,7 @@ function Newsletter() {
     <button class="button1">Learn More</button>
 
     </div>
-    <div className='card3'>
+    <div className='card3' data-aos="zoom-in">
    < h2 className="newstitle">Machine Learning</h2>
 <div className="content">
 <p>Unlock the world of creative possibilities with Generative AI. 
