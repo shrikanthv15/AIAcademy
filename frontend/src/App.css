@@ -1,0 +1,118 @@
+.title {
+  background-color: rgb(175, 175, 175);
+  width: 100%;
+  height: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0%;
+}
+
+.App {
+  background-color: white;
+  min-height: 300vh;
+  margin: 0;
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overview {
+  top: 1%;
+  position: absolute;
+  color: #000000;
+  margin-top: 50px;
+  left: 10%;
+  width: 80%;
+  font-family: "Texturina", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    transform: translate(-100px, -0px); 
+
+}
+
+.imagediv1{
+  background-image: url("https://img.freepik.com/free-vector/ecological-press-conference-member-speaking-stage-before-audience-presenting-graphs-with-earth_74855-14011.jpg?size=626&ext=jpg&ga=GA1.1.1395880969.1710115200&semt=ais");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 400px;
+  z-index: 2;
+}
+.imagediv2{
+  background-image: url("https://www.cmykonline.com.au/wp-content/uploads/2020/01/Mobile-newsletter-background-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 410px;
+  z-index: 2;
+}
+
+.imagediv3{
+  background-image: url("https://cdn.elearningindustry.com/wp-content/uploads/2020/10/what-are-the-benefits-of-animation-based-learning.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 450px;
+  z-index: 2;
+}
+
+
+.overviewdiv {
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1500px;
+  margin: 20px auto;
+  margin-left: -1.5%;
+}
+
+.card1 img {
+  border-radius: 10px; /* Add border-radius for rounded images */
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%); /* Create a custom shape */
+}
+
+
+.cardsflex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 120%;
+}
+
+.card1 {
+  background-color: white;
+  border: 2px solid #003049;
+  margin: 10px;
+  width: 30%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.card1 img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card1title {
+  text-align: center;
+  background-color: #297ad6;
+  width: 100%;
+  color: white;
+  height: 40px;
+}
+

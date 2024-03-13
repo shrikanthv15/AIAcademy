@@ -1,0 +1,112 @@
+.Newsletter{
+    position: absolute;
+    top: 70%;
+    text-align: start;
+    width: 100%;
+    height: 200vh;
+    background-color: white;
+    font-family: "Texturina", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      color: black;
+}
+
+.cta{
+    position: absolute;
+   
+}
+.newsletterflex{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 5%;
+
+
+}
+
+.newstitle {
+    position: relative;
+}
+
+.newstitle::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+     left: 0%; /* Adjust this value to center the border */
+    transform: translate(0%, 5px); /* Center the pseudo-element */
+    width: 25%; /* Adjust the width as needed */
+    border-bottom: 2px solid black; /* Set the desired border style */
+}
+.card3{
+    background-color: rgba(228, 228, 228, 0.793);
+    padding: 5%;
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 500px;
+}
+
+.content{
+    margin-top: 5%;
+}
+
+.card3:hover .newstitle::after {
+    animation: borderExpand 0.3s ease-in-out forwards;
+}
+
+
+@keyframes borderExpand {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+
+.button1 {
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #2c9caf;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: inherit;
+    overflow: hidden;
+    outline: 2px solid #2c9caf;
+    margin-left: 20%;
+    margin-top: 10%;
+    z-index: 2;
+  }
+  
+  .button1:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #70bdca;
+    box-shadow: 4px 5px 17px -4px #268391;
+  }
+  
+  .button1::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #2c9caf;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 800ms;
+  }
+  
+ .button1:hover::before {
+    width: 250%;
+  }
+  
